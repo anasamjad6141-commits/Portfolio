@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Alex Rivera | Full-Stack Developer & UI/UX Designer</title>
+    <meta name="title" content="Alex Rivera | Full-Stack Developer & UI/UX Designer">
+    <meta name="description" content="I build beautiful, high-performance digital experiences that merge cutting-edge technology with intuitive design. Available for new projects.">
+    <meta name="keywords" content="full-stack developer, UI/UX designer, web developer, portfolio, react developer">
+    <meta name="author" content="Alex Rivera">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexrivera.dev">
+    <meta property="og:title" content="Alex Rivera | Full-Stack Developer & UI/UX Designer">
+    <meta property="og:description" content="I build beautiful, high-performance digital experiences that merge cutting-edge technology with intuitive design.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alexrivera.dev">
+    <meta property="twitter:title" content="Alex Rivera | Full-Stack Developer & UI/UX Designer">
+    <meta property="twitter:description" content="I build beautiful, high-performance digital experiences that merge cutting-edge technology with intuitive design.">
+    <meta property="twitter:image" content="assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN (for development, but main styles are in style.css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3713ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#131022",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", 
+                        "lg": "1rem", 
+                        "xl": "1.5rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Sticky Glassmorphism Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto glass-nav border border-primary/10 rounded-full px-6 py-3 flex items-center justify-between shadow-sm">
+            <div class="flex items-center gap-2">
+                <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined text-xl">terminal</span>
+                </div>
+                <a href="index.html" class="text-lg font-bold tracking-tight">Alex Rivera</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#home">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#contact">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 hover:bg-primary/10 rounded-full transition-colors" aria-label="Toggle theme">
+                    <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+                </button>
+                <a class="hidden sm:block bg-primary text-white px-5 py-2 rounded-full text-sm font-bold hover:opacity-90 transition-opacity" href="index.html#contact">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden" id="home">
+            <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col gap-8 order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary w-fit">
+                        <span class="size-2 bg-primary rounded-full animate-pulse"></span>
+                        <span class="text-xs font-bold uppercase tracking-wider">Available for new projects</span>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
+                            Alex Rivera
+                        </h1>
+                        <h2 class="text-2xl md:text-3xl font-medium text-slate-600 dark:text-slate-400">
+                            Full-Stack <span class="text-primary italic">Developer</span> & Designer
+                        </h2>
+                        <p class="text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-lg leading-relaxed">
+                            I build beautiful, high-performance digital experiences that merge cutting-edge technology with intuitive design.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="projects.html" class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/25 transition-all">
+                            View Projects
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a href="#contact" class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-6 pt-4">
+                        <div class="flex -space-x-3">
+                            <div class="size-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 overflow-hidden">
+                                <img class="w-full h-full object-cover" alt="Client testimonial" src="https://randomuser.me/api/portraits/men/32.jpg" loading="lazy">
+                            </div>
+                            <div class="size-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 overflow-hidden">
+                                <img class="w-full h-full object-cover" alt="Client testimonial" src="https://randomuser.me/api/portraits/women/44.jpg" loading="lazy">
+                            </div>
+                            <div class="size-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200 overflow-hidden flex items-center justify-center bg-primary text-white text-xs font-bold">
+                                +12
+                            </div>
+                        </div>
+                        <p class="text-sm font-medium text-slate-500">Trusted by founders worldwide</p>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative">
+                    <div class="relative w-full aspect-square max-w-md mx-auto">
+                        <!-- Abstract Geometric Decoration -->
+                        <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-indigo-400/20 rounded-full blur-3xl"></div>
+                        
+                        <!-- Illustration Container -->
+                        <div class="w-full h-full bg-gradient-to-br from-primary/10 to-indigo-500/10 rounded-3xl border border-primary/20 overflow-hidden flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-center justify-center p-8">
+                                <div class="w-full h-full rounded-2xl bg-white/40 dark:bg-slate-900/40 backdrop-blur-md border border-white/50 flex flex-col p-6 shadow-2xl">
+                                    <div class="flex gap-2 mb-4">
+                                        <div class="size-3 rounded-full bg-red-400"></div>
+                                        <div class="size-3 rounded-full bg-yellow-400"></div>
+                                        <div class="size-3 rounded-full bg-green-400"></div>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <div class="h-4 w-3/4 bg-primary/20 rounded-full"></div>
+                                        <div class="h-4 w-full bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+                                        <div class="h-4 w-5/6 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+                                        <div class="h-20 w-full bg-primary/10 rounded-xl mt-4 flex items-center justify-center">
+                                            <span class="material-symbols-outlined text-4xl text-primary/50">data_object</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="py-24 px-6 bg-slate-50 dark:bg-slate-900/50" id="about">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black mb-4">My Expertise</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">I combine technical proficiency with creative vision to deliver results that stand out.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors group">
+                        <div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">code</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Frontend Development</h3>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Crafting responsive, interactive, and high-performance user interfaces using React, Next.js, and modern CSS frameworks.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors group">
+                        <div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">database</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Backend Systems</h3>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Building scalable APIs and robust server-side architectures with Node.js, Python, and cloud-native solutions.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors group">
+                        <div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">draw</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Designing intuitive user journeys and modern visual identities that prioritize accessibility and engagement.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="about.html" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+                        Learn more about me
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="py-24 px-6" id="projects">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4">Featured Projects</h2>
+                        <p class="text-slate-500 max-w-md">A selection of my recent work in web development and brand design.</p>
+                    </div>
+                    <a class="text-primary font-bold flex items-center gap-2 group" href="projects.html">
+                        View all projects
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="group cursor-pointer" onclick="window.location='projects.html#nova'">
+                        <div class="relative overflow-hidden rounded-2xl bg-slate-200 aspect-[4/3] mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Nova Financial Portal dashboard interface" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" loading="lazy">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-slate-900 px-6 py-3 rounded-full font-bold shadow-xl">View Details</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-[10px] uppercase tracking-widest font-bold px-2 py-1 bg-primary/10 text-primary rounded">Web App</span>
+                            <span class="text-[10px] uppercase tracking-widest font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 rounded">Next.js</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Nova Financial Portal</h3>
+                        <p class="text-slate-500 dark:text-slate-400">A comprehensive dashboard for asset management and real-time tracking.</p>
+                    </div>
+                    <div class="group cursor-pointer" onclick="window.location='projects.html#luxe'">
+                        <div class="relative overflow-hidden rounded-2xl bg-slate-200 aspect-[4/3] mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Luxe Interior Store e-commerce interface" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80" loading="lazy">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-slate-900 px-6 py-3 rounded-full font-bold shadow-xl">View Details</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-[10px] uppercase tracking-widest font-bold px-2 py-1 bg-primary/10 text-primary rounded">E-commerce</span>
+                            <span class="text-[10px] uppercase tracking-widest font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 rounded">Tailwind</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Luxe Interior Store</h3>
+                        <p class="text-slate-500 dark:text-slate-400">Minimalist e-commerce experience focusing on high-end furniture and decor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 px-6" id="contact">
+            <div class="max-w-6xl mx-auto">
+                <div class="bg-primary rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-indigo-500/30 rounded-full blur-3xl"></div>
+                    <h2 class="text-3xl md:text-5xl font-black text-white mb-6 relative z-10">Have a project in mind?</h2>
+                    <p class="text-white/80 text-lg md:text-xl max-w-xl mx-auto mb-10 relative z-10">
+                        Let's collaborate to build something exceptional. I'm currently open to freelance opportunities and full-time roles.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 relative z-10">
+                        <a class="bg-white text-primary px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform shadow-lg" href="mailto:hello@alexrivera.com">
+                            Get In Touch
+                        </a>
+                        <a class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition-colors" href="assets/alex-rivera-resume.pdf" download>
+                            My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="size-6 bg-primary rounded flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined text-sm">terminal</span>
+                </div>
+                <span class="text-sm font-bold tracking-tight">Alex Rivera © 2025</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="text-slate-500 hover:text-primary transition-colors font-medium text-sm" href="https://linkedin.com/in/alexrivera" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="text-slate-500 hover:text-primary transition-colors font-medium text-sm" href="https://github.com/alexrivera" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="text-slate-500 hover:text-primary transition-colors font-medium text-sm" href="https://twitter.com/alexrivera" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a class="text-slate-500 hover:text-primary transition-colors font-medium text-sm" href="https://dribbble.com/alexrivera" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
