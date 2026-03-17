@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Alex Rivera | Projects & Portfolio Work</title>
+    <meta name="title" content="Alex Rivera | Projects & Portfolio Work">
+    <meta name="description" content="Explore a selection of my recent work in web development, mobile apps, and UI/UX design projects.">
+    <meta name="keywords" content="portfolio projects, web development, mobile apps, UI design, case studies">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexrivera.dev/projects">
+    <meta property="og:title" content="Alex Rivera | Projects & Portfolio Work">
+    <meta property="og:description" content="Explore a selection of my recent work in web development, mobile apps, and UI/UX design.">
+    <meta property="og:image" content="assets/images/projects-og.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3713ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#131022",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            
+            <header class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4">
+                <div class="max-w-7xl mx-auto flex items-center justify-between whitespace-nowrap">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-primary p-2 rounded-lg flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined">auto_awesome</span>
+                        </div>
+                        <a href="index.html" class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Alex Rivera</a>
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+                        <nav class="flex items-center gap-8">
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors" href="index.html">Home</a>
+                            <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="projects.html">Projects</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors" href="about.html">About</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors" href="index.html#contact">Contact</a>
+                        </nav>
+                        <div class="flex gap-3">
+                            <button id="theme-toggle" class="flex items-center justify-center rounded-xl h-10 w-10 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" aria-label="Toggle theme">
+                                <span class="material-symbols-outlined block dark:hidden text-[20px]">dark_mode</span>
+                                <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                            </button>
+                            <a href="index.html#contact" class="flex items-center justify-center rounded-xl h-10 w-10 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" aria-label="Contact">
+                                <span class="material-symbols-outlined text-[20px]">person</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex-1 max-w-7xl mx-auto w-full px-6 md:px-20 py-12">
+                <section class="mb-12">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                        <div class="max-w-2xl">
+                            <h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4">Selected Works</h1>
+                            <p class="text-slate-600 dark:text-slate-400 text-lg">Exploring the intersection of design and technology through functional aesthetics and robust code.</p>
+                        </div>
+                        <div class="flex gap-2 bg-slate-200/50 dark:bg-slate-800/50 p-1.5 rounded-xl self-start">
+                            <button class="filter-btn px-6 py-2 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20" data-filter="all">All</button>
+                            <button class="filter-btn px-6 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-primary text-sm font-bold transition-all" data-filter="web">Web</button>
+                            <button class="filter-btn px-6 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-primary text-sm font-bold transition-all" data-filter="design">Design</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                    <!-- Project 1 - Web -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="web" id="nova">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");'
+                                 alt="Nova Financial Portal dashboard interface"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">Nova Financial Portal</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                A premium financial dashboard with real-time asset tracking, portfolio analytics, and AI-powered insights.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">React</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Node.js</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Web -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="web">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1034&q=80");'
+                                 alt="AI Dashboard with data visualization"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">AI Analytics Dashboard</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                Advanced analytics engine providing predictive insights using machine learning models and real-time data processing.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Python</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">TensorFlow</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - Mobile/Web -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="web" id="luxe">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80");'
+                                 alt="Luxe Interior Store e-commerce interface"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">Luxe Interior Store</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                A premium e-commerce experience with real-time inventory management and seamless checkout flow.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Next.js</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Stripe</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Design -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="design">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");'
+                                 alt="Mobile banking app interface design"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">Mobile Banking App</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                Secure cross-platform banking solution with biometric authentication and real-time transaction notifications.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">React Native</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Firebase</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - Design -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="design">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80");'
+                                 alt="Brand identity design mockups"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">Brand Identity System</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                Complete visual identity for a tech startup including logo design, typography, color systems, and brand guidelines.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Figma</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Illustrator</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 - Web -->
+                    <div class="project-item group relative flex flex-col gap-4 bg-white dark:bg-slate-900/40 p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2" data-category="web">
+                        <div class="relative overflow-hidden rounded-lg aspect-video">
+                            <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" 
+                                 style='background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");'
+                                 alt="Code editor showing API development"></div>
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold group-hover:text-primary transition-colors">Social Media API</h3>
+                                <span class="material-symbols-outlined text-slate-400 group-hover:text-primary">arrow_outward</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                                A highly scalable RESTful API built to handle millions of requests, featuring OAuth2 authentication and media processing.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Go</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Redis</span>
+                                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md bg-primary/10 text-primary">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-24 mb-12">
+                    <div class="glass p-8 md:p-16 rounded-3xl border-primary/20 flex flex-col items-center text-center gap-8 shadow-2xl shadow-primary/5">
+                        <div class="bg-primary/10 p-4 rounded-full">
+                            <span class="material-symbols-outlined text-primary text-4xl">rocket_launch</span>
+                        </div>
+                        <div class="max-w-2xl">
+                            <h2 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-slate-100 mb-4 tracking-tight">Have a project in mind?</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-lg">I'm currently available for freelance work and open to full-time roles in product design and frontend development.</p>
+                        </div>
+                        <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-xl shadow-primary/25 hover:shadow-primary/40 flex items-center gap-2">
+                            <span>Get In Touch</span>
+                            <span class="material-symbols-outlined">send</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="bg-slate-100 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 py-12 px-6">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-primary p-1.5 rounded-md flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        </div>
+                        <a href="index.html" class="font-bold text-slate-900 dark:text-slate-100">Alex Rivera</a>
+                    </div>
+                    <p class="text-slate-500 text-sm">© 2025 Alex Rivera. Built with passion and code.</p>
+                    <div class="flex gap-6">
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="mailto:hello@alexrivera.com" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="https://github.com/alexrivera" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="material-symbols-outlined">terminal</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="https://linkedin.com/in/alexrivera" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
