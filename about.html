@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Alex Rivera | Creative Developer & Designer</title>
+    <meta name="title" content="About Alex Rivera | Creative Developer & Designer">
+    <meta name="description" content="Learn about Alex Rivera, a creative developer and UI/UX designer with 5+ years of experience crafting immersive digital experiences.">
+    <meta name="keywords" content="about me, developer bio, UX designer, creative developer, portfolio">
+    <meta name="author" content="Alex Rivera">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexrivera.dev/about">
+    <meta property="og:title" content="About Alex Rivera | Creative Developer & Designer">
+    <meta property="og:description" content="Learn about Alex Rivera, a creative developer and UI/UX designer with 5+ years of experience.">
+    <meta property="og:image" content="assets/images/about-og.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3713ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#131022",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+        
+        <!-- Navigation -->
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+            <div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+                <div class="size-8 text-primary">
+                    <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+                    </svg>
+                </div>
+                <a href="index.html" class="text-lg font-bold leading-tight tracking-tight">Alex Rivera</a>
+            </div>
+            <div class="flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="text-sm font-bold text-primary" href="about.html">About</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#contact">Contact</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <button id="theme-toggle" class="p-2 hover:bg-primary/10 rounded-full transition-colors" aria-label="Toggle theme">
+                        <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+                        <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+                    </button>
+                    <a href="index.html#contact" class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-all">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 max-w-5xl mx-auto w-full px-6 py-12 lg:px-10">
+            <!-- Hero Section -->
+            <section class="flex flex-col lg:flex-row gap-12 items-center mb-20">
+                <div class="flex-shrink-0">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full h-48 w-48 lg:h-64 lg:w-64 border-4 border-background-light dark:border-background-dark" 
+                             style='background-image: url("https://randomuser.me/api/portraits/men/32.jpg");'
+                             alt="Professional headshot of Alex Rivera, creative developer"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 text-center lg:text-left">
+                    <div>
+                        <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight mb-2">Alex <span class="text-primary">Rivera</span></h1>
+                        <p class="text-xl text-primary font-semibold">Creative Developer & UI/UX Designer</p>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-2xl">
+                        I am a digital architect based in San Francisco with over 5 years of experience crafting immersive experiences. My mission is to bridge the gap between technical complexity and intuitive design, creating products that are as functional as they are beautiful.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <a href="assets/alex-rivera-resume.pdf" download class="flex items-center gap-2 rounded-xl h-12 px-6 bg-primary text-white text-sm font-bold hover:translate-y-[-2px] transition-transform shadow-lg shadow-primary/20">
+                            <span class="material-symbols-outlined">download</span>
+                            Download CV
+                        </a>
+                        <div class="flex gap-3">
+                            <a class="h-12 w-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all" href="mailto:hello@alexrivera.com" aria-label="Email">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                            </a>
+                            <a class="h-12 w-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all" href="#" aria-label="Share profile">
+                                <span class="material-symbols-outlined">share</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Grid -->
+            <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+                <div class="p-6 rounded-2xl bg-white dark:bg-background-dark border border-primary/5 flex flex-col items-center text-center">
+                    <span class="text-3xl font-bold text-primary mb-1">5+</span>
+                    <span class="text-xs font-semibold uppercase tracking-widest opacity-60">Years Exp</span>
+                </div>
+                <div class="p-6 rounded-2xl bg-white dark:bg-background-dark border border-primary/5 flex flex-col items-center text-center">
+                    <span class="text-3xl font-bold text-primary mb-1">40+</span>
+                    <span class="text-xs font-semibold uppercase tracking-widest opacity-60">Projects</span>
+                </div>
+                <div class="p-6 rounded-2xl bg-white dark:bg-background-dark border border-primary/5 flex flex-col items-center text-center">
+                    <span class="text-3xl font-bold text-primary mb-1">12</span>
+                    <span class="text-xs font-semibold uppercase tracking-widest opacity-60">Awards</span>
+                </div>
+                <div class="p-6 rounded-2xl bg-white dark:bg-background-dark border border-primary/5 flex flex-col items-center text-center">
+                    <span class="text-3xl font-bold text-primary mb-1">100%</span>
+                    <span class="text-xs font-semibold uppercase tracking-widest opacity-60">Satisfaction</span>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-20">
+                <div class="flex flex-col gap-2 mb-10">
+                    <h2 class="text-3xl font-bold">Expertise & Skills</h2>
+                    <div class="h-1 w-20 bg-primary rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                    <!-- Skill 1 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">html</span>
+                                </div>
+                                <span class="font-bold">HTML/CSS</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">95%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 2 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">javascript</span>
+                                </div>
+                                <span class="font-bold">JavaScript</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">90%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 3 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">code</span>
+                                </div>
+                                <span class="font-bold">React / Next.js</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">85%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 4 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">palette</span>
+                                </div>
+                                <span class="font-bold">Tailwind CSS</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">98%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 5 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">design_services</span>
+                                </div>
+                                <span class="font-bold">UI/UX Design</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">88%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 6 -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 rounded-lg bg-primary/10 text-primary">
+                                    <span class="material-symbols-outlined">terminal</span>
+                                </div>
+                                <span class="font-bold">Node.js</span>
+                            </div>
+                            <span class="text-sm font-semibold opacity-60">75%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Education Timeline -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- Experience -->
+                <div>
+                    <div class="flex flex-col gap-2 mb-8">
+                        <h2 class="text-2xl font-bold flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">work</span>
+                            Experience
+                        </h2>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-primary/20 space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-0 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2021 — Present</span>
+                                <h3 class="text-lg font-bold mt-1">Senior Creative Developer</h3>
+                                <p class="text-sm font-medium opacity-60">Nebula Studios, SF</p>
+                                <p class="text-sm mt-3 text-slate-600 dark:text-slate-400">Lead front-end architect for high-traffic Web3 applications. Implemented design systems and optimized performance.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-0 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2018 — 2021</span>
+                                <h3 class="text-lg font-bold mt-1">Full Stack Engineer</h3>
+                                <p class="text-sm font-medium opacity-60">Pixel Perfect Agency</p>
+                                <p class="text-sm mt-3 text-slate-600 dark:text-slate-400">Developed custom CMS solutions and interactive marketing landing pages for Fortune 500 clients.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-0 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2016 — 2018</span>
+                                <h3 class="text-lg font-bold mt-1">Junior UI Designer</h3>
+                                <p class="text-sm font-medium opacity-60">Creative Hub</p>
+                                <p class="text-sm mt-3 text-slate-600 dark:text-slate-400">Assisted in user research and wireframing for mobile application projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div>
+                    <div class="flex flex-col gap-2 mb-8">
+                        <h2 class="text-2xl font-bold flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">school</span>
+                            Education
+                        </h2>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-primary/20 space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-0 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2014 — 2016</span>
+                                <h3 class="text-lg font-bold mt-1">M.S. Interaction Design</h3>
+                                <p class="text-sm font-medium opacity-60">Stanford University</p>
+                                <p class="text-sm mt-3 text-slate-600 dark:text-slate-400">Specialized in human-computer interaction and cognitive psychology in digital spaces.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-0 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2010 — 2014</span>
+                                <h3 class="text-lg font-bold mt-1">B.S. Computer Science</h3>
+                                <p class="text-sm font-medium opacity-60">University of California, Berkeley</p>
+                                <p class="text-sm mt-3 text-slate-600 dark:text-slate-400">Foundation in software engineering, algorithms, and data structures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="mt-32 p-10 rounded-3xl bg-primary text-white text-center relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-purple-800 opacity-50"></div>
+                <div class="relative z-10 flex flex-col items-center gap-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold max-w-xl">Ready to bring your next big idea to life?</h2>
+                    <p class="opacity-80 max-w-lg mx-auto">I'm currently available for freelance work and full-time collaborations. Let's create something extraordinary together.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="index.html#contact" class="px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl">
+                            Let's Talk
+                        </a>
+                        <a href="projects.html" class="px-8 py-4 border border-white/30 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-20 border-t border-primary/10 py-10 px-6 lg:px-40">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="size-6 text-primary">
+                        <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+                        </svg>
+                    </div>
+                    <span class="font-bold opacity-60 text-sm">© 2025 Alex Rivera. All rights reserved.</span>
+                </div>
+                <div class="flex gap-6 text-sm font-medium opacity-60">
+                    <a class="hover:text-primary" href="https://linkedin.com/in/alexrivera" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="hover:text-primary" href="https://github.com/alexrivera" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="hover:text-primary" href="https://twitter.com/alexrivera" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a class="hover:text-primary" href="https://dribbble.com/alexrivera" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
